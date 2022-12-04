@@ -819,7 +819,7 @@ ul {
 .modal-button-send {
   background-color: var(--hover-color);
   font-size: 16px;
-  color: var(--color-white);
+  color: var();
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -833,11 +833,9 @@ ul {
   margin-top: 30px;
 }
 
-
 .modal-labels {
   display: block;
   position: relative;
-  /* margin: 40px; */
 }
 
 .text-in-modal {
@@ -881,15 +879,19 @@ ul {
 .modal-labels:has(.modal-holder:focus) .label-position {
   fill: var(--hover-color);
 }
+
 .text-in-modal {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   margin-bottom: 4px;
   display: block;
+  padding-top: 18px;
   letter-spacing: 0.01em;
   color: #757575;
 }
+
+
 .option {
   position: relative;
   display: block;
@@ -918,7 +920,6 @@ ul {
 .check {
   padding-left: 2.2em;
   margin-top: 20px;
-  
 }
 
 .check__input {
@@ -983,12 +984,9 @@ ul {
 }
 
 .text-area-label {
-    margin: 20px;
+  margin: 20px;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   color: #757575;
- 
 }
-
-
