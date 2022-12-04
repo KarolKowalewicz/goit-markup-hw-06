@@ -816,6 +816,24 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.modal-button-send {
+  background-color: var(--hover-color);
+  font-size: 16px;
+  color: var(--color-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 76px 10px 76px;
+  cursor: pointer;
+  font-family: inherit;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+
 .modal-labels {
   display: block;
   position: relative;
