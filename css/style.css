@@ -766,7 +766,6 @@ ul {
   height: 50px;
   font-size: 16px;
   font-family: inherit;
-  /* color: red */
 }
 
 .newsletter-button-join {
@@ -834,8 +833,9 @@ ul {
 }
 
 .modal-labels {
-  display: block;
   position: relative;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .text-in-modal {
@@ -990,3 +990,6 @@ ul {
   line-height: 14px;
   color: #757575;
 }
+
+
+
