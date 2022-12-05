@@ -17,6 +17,7 @@ body {
   font-family: 'Roboto', 'Raleway', sans-serif;
   color: var(--color-black);
   font-weight: 400;
+  letter-spacing: 0.03em;
 }
 
 h1,
@@ -33,6 +34,7 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 /* img są elementami liniowymi  ale  lepiej zmianć od razu na blokowe */
 img {
@@ -692,10 +694,7 @@ ul {
   position: absolute;
   left: 50%;
   top: 50%;
-  /* z-index: 1; */
   padding: 40px;
-  /* transition-property: visibility, opacity, transform; */
-  /* transition-duration: 2s; */
   background-color: var(--color-white);
   transform: translateX(-50%) translateY(-50%) scale(1) rotate(720deg) skew(0deg, 0deg);
   opacity: 1;
@@ -808,14 +807,15 @@ ul {
   font-weight: 700;
   font-size: 20px;
   color: var(--color-grey);
-  /* dlaczego line-heigh tak */
-  line-height: 23.44px;
+  /* line-height: 23.44px;     zostawić */
   text-align: center;
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
   letter-spacing: 0.03em;
 }
 
 .modal-button-send {
+  position: relative;
+  top: 100px;
   background-color: var(--hover-color);
   font-size: 16px;
   color: var();
@@ -829,23 +829,17 @@ ul {
   font-family: inherit;
   display: block;
   margin: 0 auto;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 .modal-labels {
   position: relative;
   display: block;
-  margin-bottom: 10px;
+  top: 20px;
+  padding-top: 10px;
+  /* margin-bottom: 10x; */
 }
 
-.text-in-modal {
-  display: block;
-  color: var(--color-black);
-  margin-bottom: 4px;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 14px;
-}
 .modal-holder {
   width: 465px;
   height: 40px;
@@ -856,15 +850,6 @@ ul {
   transition: border-color 2s, outline 2s;
 }
 
-.modal-labels:has(.modal-holder:focus) .label-position {
-  fill: var(--main-color);
-}
-.label-position {
-  position: absolute;
-  top: 50%;
-  left: 13px;
-}
-
 .modal-holder:focus,
 .text-area:focus {
   outline-color: var(--hover-color);
@@ -873,9 +858,7 @@ ul {
   border-color: var(--hover-color);
   outline-color: var(--hover-color);
 }
-.modal-labels:hover .label-position {
-  fill: var(--main-color);
-}
+
 .modal-labels:has(.modal-holder:focus) .label-position {
   fill: var(--hover-color);
 }
@@ -883,29 +866,36 @@ ul {
 .text-in-modal {
   font-weight: 400;
   font-size: 12px;
+  letter-spacing: 0.01em;
   line-height: 14px;
   margin-bottom: 4px;
   display: block;
-  padding-top: 18px;
-  letter-spacing: 0.01em;
   color: #757575;
 }
 
-
 .option {
   position: relative;
+  top: 60px;
   display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 400;
   margin-bottom: 0.5em;
 }
 .label-position {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 13px;
 }
 
 .modal-labels:hover .label-position {
   fill: var(--hover-color);
 }
+
+.modal-labels:has(.modal-holder:focus) .label-position {
+  fill: var(--hover-color);
+}
+
 .modal-formul-icons {
   position: absolute;
 }
@@ -918,8 +908,9 @@ ul {
 }
 
 .check {
-  padding-left: 2.2em;
-  margin-top: 20px;
+  /* padding-left: 2.2em; */
+  padding-left: 30px;
+  margin-top: 12px;
 }
 
 .check__input {
@@ -929,12 +920,19 @@ ul {
   margin: -1px;
 }
 
+/* usówanie outline */
+/* .check_input:focus {
+  outline: none;
+} */
+
 .check__box {
   position: absolute;
   margin-top: 0.2em;
   margin-left: -1em;
-  width: 0.6em;
-  height: 0.6em;
+  /* width: 16px;
+  height: 16px; */
+  width: 0.9em;
+  height: 0.9em;
   overflow: hidden;
   border-radius: 0.05em;
   background-color: white;
@@ -960,8 +958,10 @@ ul {
   background-color: #9b9b9b;
 }
 .blue-checkbox-text {
+  /* letter-spacing: 3%; */
+  padding: 0 5px;
   font-size: 14px;
-  color: var(--hover-color);
+   color: var(--hover-color);
   cursor: pointer;
 }
 .blue-checkbox-text:hover,
@@ -979,17 +979,21 @@ ul {
 }
 .text-area:hover,
 .text-area:focus {
-  border-color: var(--main-color);
-  outline: var(--main-color);
+  border-color: var(--hover-color);
+  outline: var(--hover-color);
 }
 
 .text-area-label {
-  margin: 20px;
+  position: relative;
+  top: 50px;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  color: #757575;
+  color:  #757575;
 }
+.black_checbox-text {
+  font-size: 14px;
+  letter-spacing: 3%;
+  padding: 0 5px;
 
-
-
+}
