@@ -116,6 +116,36 @@
           
     </fieldset>
         </form>
+        <form class="my-form">
+  <fieldset class="fieldset">
+    <label for="name">Name</label>
+    <svg class="icon" title>
+      <use xlink:href="./assets/SVGIcons/sprites.svg#user-icon"></use>
+    </svg>
+    <input type="text" placeholder="John Doe" id="name" />
+  </fieldset>
+  <fieldset class="fieldset">
+    <label for="phone">Phone</label>
+    <svg class="icon" title>
+      <use xlink:href="./assets/SVGIcons/sprites.svg#user-icon"></use>
+    </svg>
+    <input type="tel" placeholder="000-000-000" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" />
+  </fieldset>
+  <fieldset class="fieldset mailFieldset">
+    <label for="mail">E-mail</label>
+    <svg class="icon" title>
+      <use xlink:href="./assets/SVGIcons/sprites.svg#user-icon"></use>
+    </svg>
+    <input type="email" placeholder="your@mail" id="mail" />
+  </fieldset>
+  <label class="legal-checkbox">
+    <input type="checkbox" id="legal" />
+    Wanna leave a comment?
+  </label>
+  <fieldset class="fieldset conditionalFieldset">
+    <input class="textarea" type="textarea" />
+  </fieldset>
+</form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
